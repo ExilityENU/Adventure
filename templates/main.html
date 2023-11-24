@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+</head>
+<body>
+    <h1>{{ room_info['text'] }}</h1>
+    <form action="{{ url_for('move') }}" method="post">
+        {% for option in room_info['options'] %}
+            <button type="submit" name="direction" value="{{ option }}">{{ option }}</button>
+        {% endfor %}
+    </form>
+</body>
+</html>
