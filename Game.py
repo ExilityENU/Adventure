@@ -16,6 +16,13 @@ class Adventure:
     def get_current_room(self):
         return self.game_state['rooms'][self.current_room]
 
+
+# Define static GIF
+static_gif_url = 'static/star-wars-the-old-republic.gif'
+
+# Initialize a variable to store the current image URL
+current_image_url = static_gif_url
+
 # Define the initial game state
 game_state = {
     'intro': 'You find yourself in the midst of the Old Republic era, a time of galactic strife and political turmoil. The Sith Empire and the Galactic Republic are locked in a relentless conflict, and you, a young Force-sensitive individual, stand at the crossroads of destiny. As a member of an ancient order known as the Sentinels of the Eternal Flame, you possess a unique ability to influence the outcome of this eternal war.',
@@ -27,7 +34,8 @@ game_state = {
         },
         'enter_temple': {
             'text': 'The grand entrance looms ahead. Massive stone doors engraved with the symbols of the Force beckon you. As you approach, you sense a disturbance in the Force. Your journey begins. Choose your next move:',
-            'options': ['knowledge', 'combat']
+            'options': ['knowledge', 'combat'],
+            'image': current_image_url
         },
         'knowledge': {
             'text': 'You enter a vast chamber filled with holographic archives. A wise old Jedi Guardian appears before you. "Choose a path to enlightenment," he says. Options:',

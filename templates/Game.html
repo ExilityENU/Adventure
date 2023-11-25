@@ -1,16 +1,23 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure Game - {{ player_name }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>Welcome, {{ player_name }}!</h1>
         <div id="room-info">
             <h2>{{ room_info['text'] }}</h2>
+
+            <!-- Add an image container with a static GIF -->
+            <div id="image-container">
+                <img src="{{ url_for('static', filename='star-wars-the-old-republic.gif') }}" alt="Static GIF">
+            </div>
+
             <form action="{{ url_for('move') }}" method="post">
                 {% for option in room_info['options'] %}
                     <button type="submit" name="direction" value="{{ option }}">{{ option }}</button>
