@@ -1,19 +1,26 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask
 
 app = Flask(__name__)
 
 class Adventure:
     def __init__(self, game_state):
+        # This is the setup when you create a new Adventure.
+        # We'll use the game_state to know where the player is and what's happening.
         self.game_state = game_state
         self.current_room = game_state['current_room']
 
     def move(self, direction):
+        # Move the player to a new room.
+        # If the direction is legit (in the options for the current room), we'll update the current room.
+        # Returns True if the move is valid, False if it's not.
         if direction in self.game_state['rooms'][self.current_room]['options']:
             self.current_room = direction
             return True
         else:
             return False
+
     def get_current_room(self):
+        # Just a way to get info about the current room.
         return self.game_state['rooms'][self.current_room]
 
 
@@ -35,7 +42,6 @@ game_state = {
         'enter_temple': {
             'text': 'The grand entrance looms ahead. Massive stone doors engraved with the symbols of the Force beckon you. As you approach, you sense a disturbance in the Force. Your journey begins. Choose your next move:',
             'options': ['knowledge', 'combat'],
-            'image': current_image_url
         },
         'knowledge': {
             'text': 'You enter a vast chamber filled with holographic archives. A wise old Jedi Guardian appears before you. "Choose a path to enlightenment," he says. Options:',
@@ -133,6 +139,14 @@ game_state = {
             'text': 'Armed with newfound wisdom, you return to the training ground. The battle-hardened Jedi Sentinel observes your every move. Options:',
             'options': ['utilize strategic wisdom (Tactician)', 'employ ancient techniques (Wisdom in Combat)']
         },
+        'employ ancient techniques (Wisdom in Combat)': {
+            'text': 'You tap into the ancient techniques passed down through generations. Your combat style becomes a dance of traditional and strategic moves. Choose your next move:',
+            'options': ['return to temple entrance', 'proceed to the next chapter']
+        },
+        'utilize strategic wisdom (Tactician)': {
+            'text': 'You strategically apply wisdom to your combat techniques, analyzing and outsmarting your opponents. The Jedi Sentinel nods in approval. Choose your next move:',
+            'options': ['return to temple entrance', 'proceed to the next chapter']
+        },
         'meditate on the Force (Mastery)': {
             'text': 'You choose to meditate on the Force, seeking mastery over its energies. Your connection deepens, opening new pathways to understanding. Choose your next move:',
             'options': ['apply mastery in combat', 'continue exploring the temple']
@@ -140,6 +154,14 @@ game_state = {
         'apply mastery in combat': {
             'text': 'Embracing your mastery of the Force, you return to the training ground. The battle-hardened Jedi Sentinel observes your every move. Options:',
             'options': ['unleash controlled power (Masterful Strikes)', 'weave the Force into defense (Force Shield)']
+        },
+        'unleash controlled power (Masterful Strikes)': {
+            'text': 'You unleash a torrent of controlled power, overwhelming your opponents with precise and devastating strikes. Your mastery is unmatched. Choose your next move:',
+            'options': ['return to temple entrance', 'proceed to the next chapter']
+        },
+        'weave the Force into defense (Force Shield)': {
+            'text': 'You weave the Force into a formidable shield, deflecting attacks with ease. Your defensive prowess is unmatched. Choose your next move:',
+            'options': ['return to temple entrance', 'proceed to the next chapter']
         },
         'return to temple entrance': {
             'text': 'You decide to return to the temple entrance, reflecting on your journey and preparing for what lies ahead. As you arrive, the path splits once more. Choose your next move:',

@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Setting up the character encoding and viewport for better mobile responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Game - {{ player_name }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <!-- Title of the game, using the player's name -->
+    <title>Adventure Game{{ player_name }}</title>
+    <!-- Linking the external stylesheet for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
 </head>
+
 <body>
+    <!-- The main container for our game -->
     <div class="container">
+        <!-- Greeting the player with a welcoming heading -->
         <h1>Welcome, {{ player_name }}!</h1>
+        <!-- Displaying information about the current room -->
         <div id="room-info">
+            <!-- Heading for the current room's text -->
             <h2>{{ room_info['text'] }}</h2>
 
-            <!-- Add an image container with a static GIF -->
+            <!-- Container for displaying images -->
             <div id="image-container">
+                <!-- Displaying a static GIF related to Star Wars -->
                 <img src="{{ url_for('static', filename='star-wars-the-old-republic.gif') }}" alt="Static GIF">
             </div>
 
+            <!-- Form for player interaction - choosing options -->
             <form action="{{ url_for('move') }}" method="post">
+                <!-- Looping through available options for the current room -->
                 {% for option in room_info['options'] %}
+                    <!-- Button for each option, triggering a move in the game -->
                     <button type="submit" name="direction" value="{{ option }}">{{ option }}</button>
                 {% endfor %}
             </form>
         </div>
     </div>
 </body>
+
 </html>

@@ -1,47 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #006400; /* Dark green background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #b66411; /* Dark background color */
     margin: 0;
     color: #fff; /* White text color */
 }
 
 .container {
     text-align: center;
-    background-color: rgba(148, 62, 0, 0.8); /* Semi-transparent white background */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow */
 }
 
 h1, h2, p {
-    color: #fff; /* White text color */
+    color: #ffe300; /* Yellow text color */
 }
 
 form {
     margin-top: 20px;
-}
-
-label {
-    margin-right: 10px;
-    color: #fff; /* White text color */
-}
-
-input {
-    padding: 8px;
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button {
+    margin: 10px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #a15c02;
+    background-color: #1c85e8; /* Blue button color */
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    outline: none; /* Remove default outline */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #155d91; /* Darker blue on hover */
+}
+
+img {
+    border: 2px solid #ffe300; /* Yellow border around images */
 }

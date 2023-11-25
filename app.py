@@ -37,7 +37,7 @@ def game():
                 return redirect(url_for('game'))
             else:
                 return jsonify({'error': 'Invalid direction'})
-    player_name = "Mike"  # Replace with the actual player name or retrieve it from previous forms
+    player_name = "Jedi Padawan"  # Replace with the actual player name or retrieve it from previous forms
     room_info = adventure_game.get_current_room()
     return render_template('Game.html', player_name=player_name, room_info=room_info)
 
