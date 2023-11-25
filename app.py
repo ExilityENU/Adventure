@@ -1,6 +1,8 @@
 from flask import Flask, render_template, redirect, url_for, jsonify, request, session
-from model import db
-from Game import adventure_game, game_state
+
+import Game
+from Game import *
+from model import db, User
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///adventure.db'  # SQLite database file
@@ -22,6 +24,15 @@ def move():
 		return redirect(url_for('index'))
 	else:
 		return jsonify({'error': 'Invalid direction'})
+
+@app.route('/save_game/<username>', methods=['POST'])
+def save_game_route(username):
+	player = User.query.filter_by(username=username).first()
+	if player:
+		Game.game(username)
+		return jsonify({'message': 'Game saved successfully'})
+	else:
+		return jsonify({'error': 'Player not found'})
 
 
 @app.route('/', methods=['GET', 'POST'])
