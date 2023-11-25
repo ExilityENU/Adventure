@@ -279,10 +279,6 @@ game_state = {
             'text': 'You decide to head to the Galactic Space Station, a hub of activity and a nexus for various paths in the galaxy. As you arrive, new opportunities and challenges present themselves. Choose your next move:',
             'options': ['return to the start page', 'head to Hoth']
         },
-        'head to Hoth': {
-            'text': 'You decide to head to the icy planet of Hoth, where new adventures and trials await. As you embark on this journey, the story takes a temporary pause. TO BE CONTINUED...',
-            'options': ['return to the start page']
-        },
         'return to the start page': {
             'text': 'As the echoes of your dark choice reverberate through the Force, you find yourself back at the start page, standing before the ancient temple of Morai on the remote planet of Tython. A chilling wind rustles the leaves as you enter the forest, guided only by the Force. Choose a direction:',
             'options': ['enter_temple', 'explore_forest']
