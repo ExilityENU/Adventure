@@ -1,13 +1,10 @@
 from flask import Flask, render_template, redirect, url_for, jsonify, request, session
-from flask_sqlalchemy import SQLAlchemy
+from model import db
 
 from Game import Adventure, game_state
 
 app = Flask(__name__)
 app.config['sqlite:///adventure.db'] = 'sqlite:///adventure.db'  # SQLite database file
-db = SQLAlchemy(app)
-
-
 
 
 app = Flask(__name__)
