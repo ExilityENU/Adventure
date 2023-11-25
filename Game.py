@@ -286,6 +286,74 @@ game_state = {
         'return to the start page': {
             'text': 'As the echoes of your dark choice reverberate through the Force, you find yourself back at the start page, standing before the ancient temple of Morai on the remote planet of Tython. A chilling wind rustles the leaves as you enter the forest, guided only by the Force. Choose a direction:',
             'options': ['enter_temple', 'explore_forest']
-        }
+        },
+        'head to Hoth': {
+            'text': 'You decide to head to the icy planet of Hoth, a battleground in the ongoing war between the Sith Empire and the Galactic Republic. As you arrive, you find yourself in the midst of a specific battle, the Battle of Hoth, where the fate of the galaxy hangs in the balance. The freezing winds and vast snowy landscapes set the stage for an epic conflict. Choose your next move:',
+            'options': ['join the Republic defense (Fortress)', 'aid the Sith invasion (Glacial Onslaught)']
+        },
+        'join the Republic defense (Fortress)': {
+            'text': 'You choose to join the Republic forces in defending their stronghold against the relentless assault of the Sith Empire. The chilling winds carry the sounds of blaster fire and lightsaber clashes. Choose your next move:',
+            'options': ['hold the frontlines with valor (Valor)', 'coordinate strategic defenses (Tactician)']
+        },
+        'aid the Sith invasion (Glacial Onslaught)': {
+            'text': 'You decide to aid the Sith Empire in their relentless invasion, seeking to overwhelm the Republic forces and claim victory for the dark side. The icy terrain becomes a battlefield as the clash intensifies. Choose your next move:',
+            'options': ['lead a Sith battalion with power (Power)', 'employ cunning tactics to outsmart the Republic (Deception)']
+        },
+        'hold the frontlines with valor (Valor)': {
+            'text': 'With unwavering courage, you hold the frontlines against the Sith onslaught. Blaster bolts and lightsabers clash in a symphony of war. Choose your next move:',
+            'options': ['engage the Sith in a duel of might (Mighty Duel)', 'call for reinforcements (Strategic Reinforcement)']
+        },
+        'coordinate strategic defenses (Tactician)': {
+            'text': 'You take on the role of a tactician, coordinating the Republic\'s defenses with strategic brilliance. The battlefield becomes a chessboard of war. Choose your next move:',
+            'options': ['utilize defensive emplacements (Fortified Defense)', 'execute a counteroffensive strategy (Counterstrike)']
+        },
+        'lead a Sith battalion with power (Power)': {
+            'text': 'Embracing the power of the dark side, you lead a Sith battalion with overwhelming force. The Republic defenders struggle against the sheer might of the Sith Empire. Choose your next move:',
+            'options': ['push forward with relentless aggression (Onslaught)', 'target key Republic positions with precision (Strategic Strikes)']
+        },
+        'employ cunning tactics to outsmart the Republic (Deception)': {
+            'text': 'With cunning and deception, you outsmart the Republic forces, creating confusion and chaos on the battlefield. The Sith advance with strategic finesse. Choose your next move:',
+            'options': ['infiltrate Republic command for intel (Sabotage)', 'unleash a surprise flank attack (Flanking Maneuver)']
+        },
+        'engage the Sith in a duel of might (Mighty Duel)': {
+            'text': 'You engage in a duel of might with the Sith, lightsabers clashing in a display of raw power. The outcome of this individual battle could sway the tide of the larger conflict. Choose your next move:',
+            'options': ['overpower the Sith with sheer strength (Brute Force)', 'utilize finesse and technique (Precision Strikes)']
+        },
+        'call for reinforcements (Strategic Reinforcement)': {
+            'text': 'Recognizing the need for additional support, you call for reinforcements to bolster the Republic defense. The battle takes a strategic turn with the arrival of fresh troops. Choose your next move:',
+            'options': ['lead the reinforced charge (Counteroffensive)', 'provide support from a command position (Commander\'s Strategy)']
+        },
+        'utilize defensive emplacements (Fortified Defense)': {
+            'text': 'You strategically deploy defensive emplacements, creating a formidable barrier against the Sith advance. The Republic stronghold becomes a fortress that is challenging to breach. Choose your next move:',
+            'options': ['launch a counterattack from fortified positions (Counter Assault)', 'maintain a defensive stance (Hold the Line)']
+        },
+        'execute a counteroffensive strategy (Counterstrike)': {
+            'text': 'With a counteroffensive strategy, you lead the Republic forces in a determined push against the Sith. The tide of battle begins to shift in favor of the Republic. Choose your next move:',
+            'options': ['press the advantage with relentless attacks (Forward Assault)', 'consolidate gains and fortify positions (Secure Advance)']
+        },
+        'push forward with relentless aggression (Onslaught)': {
+            'text': 'With relentless aggression, you push the Sith forces back, carving a path through their ranks. The chilling winds carry the sounds of victory. Choose your next move:',
+            'options': ['pursue the retreating Sith for a decisive victory (Chase Down)', 'consolidate gains and prepare for the next assault (Preparation)']
+        },
+        'target key Republic positions with precision (Strategic Strikes)': {
+            'text': 'You target key Republic positions with precision, causing disruption and weakening their defenses. The Sith advance with calculated strikes. Choose your next move:',
+            'options': ['exploit weakened defenses for a breakthrough (Exploitation)', 'redirect forces to vulnerable Republic flanks (Diversion)']
+        },
+        'infiltrate Republic command for intel (Sabotage)': {
+            'text': 'You infiltrate Republic command, gathering valuable intel and causing confusion among their leadership. The Sith forces benefit from the strategic advantage. Choose your next move:',
+            'options': ['exploit gathered intel for targeted strikes (Exploitation)', 'disrupt Republic communication lines (Communication Sabotage)']
+        },
+        'unleash a surprise flank attack (Flanking Maneuver)': {
+            'text': 'With a surprise flank attack, you catch the Republic forces off guard. The Sith advance from an unexpected direction, creating chaos among the defenders. Choose your next move:',
+            'options': ['press the advantage with swift attacks (Swift Onslaught)', 'consolidate gains and fortify positions (Secure Flank)']
+        },
+        'overpower the Sith with sheer strength (Brute Force)': {
+            'text': 'You overpower the Sith with sheer strength, dominating the individual duel. The defeated Sith forces retreat, demoralized by your display of power. Choose your next move:',
+            'options': ['pursue the retreating Sith for a decisive victory (Pursuit)', 'consolidate gains and prepare for the next assault (Preparation)']
+        },
+        'utilize finesse and technique (Precision Strikes)': {
+            'text': 'With finesse and technique, you outmaneuver the Sith in the individual duel. The Sith forces are left in disarray, opening opportunities for the Republic. Choose your next move:',
+            'options': ['press the advantage with calculated strikes (Calculated Assault)', 'consolidate gains and fortify positions (Secure Advantage)']
+        },
     }
 }

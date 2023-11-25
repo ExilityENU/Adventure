@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Adventure Game</h1>
-        <p>Enter your name to begin:</p>
+        <h1>Welcome to the Star wars the Old Republic Adventure Game</h1>
         <!-- Container for displaying images -->
             <div id="image-container">
                 <!-- Displaying a static GIF -->
-                <img src="{{ url_for('static', filename='star-wars-the-old-republic.gif') }}" alt="Static GIF">
+                <img src="{{ url_for('static', filename='jeditempl.jpg') }}" alt="Static GIF">
             </div>
+        <p>Enter your name to begin:</p>
         <form action="{{ url_for('game') }}" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
