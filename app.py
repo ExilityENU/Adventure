@@ -1,16 +1,13 @@
 from flask import Flask, render_template, redirect, url_for, jsonify, request, session
 from model import db
-
-from Game import Adventure, game_state
-
-app = Flask(__name__)
-app.config['sqlite:///adventure.db'] = 'sqlite:///adventure.db'  # SQLite database file
-
+from Game import adventure_game, game_state
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///adventure.db'  # SQLite database file
+db.init_app(app)
+with app.app_context():
+	db.create_all()
 
-game = Adventure(game_state)
-adventure_game = Adventure(game_state)
 
 @app.route('/Game')
 def index():

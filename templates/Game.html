@@ -12,34 +12,38 @@
 </head>
 
 <body>
-    <!-- The main container for our game -->
-    <div class="container">
-        <!-- Greeting the player with a welcoming heading -->
-        <h1>Welcome, {{ player_name }}!</h1>
-        <!-- Displaying information about the current room -->
-        <div id="room-info">
-            <!-- Heading for the current room's text -->
-            <h2>{{ room_info['text'] }}</h2>
+<!-- The main container for our game -->
+<div class="container">
+    <!-- Greeting the player with a welcoming heading -->
+    <h1>Welcome, {{ player_name }}!</h1>
+    <!-- Displaying information about the current room -->
+    <div id="room-info">
+        <!-- Heading for the current room's text -->
+        <h2>{{ room_info['text'] }}</h2>
 
-            <!-- Container for displaying images -->
-            <div id="image-container">
-                <!-- Displaying a static GIF -->
-                <img src="{{ url_for('static', filename='star-wars-the-old-republic.gif') }}" alt="Static GIF">
-            </div>
+        <!-- Container for displaying images -->
+        <div id="image-container">
+            <!-- Displaying a static GIF -->
+            <img src="{{ url_for('static', filename='star-wars-the-old-republic.gif') }}" alt="Static GIF">
+        </div>
 
-            <!-- Form for player interaction - choosing options -->
-            <form action="{{ url_for('move') }}" method="post">
-                <!-- Looping through available options for the current room -->
-                {% for option in room_info['options'] %}
-                    <!-- Button for each option, triggering a move in the game -->
-                    <button type="submit" name="direction" value="{{ option }}">{{ option }}</button>
-                {% endfor %}
-            </form>
-            <form action="{{ url_for('main') }}" method="get">
+        <!-- Form for player interaction - choosing options -->
+        <form action="{{ url_for('move') }}" method="post">
+            <!-- Looping through available options for the current room -->
+            {% for option in room_info['options'] %}
+            <!-- Button for each option, triggering a move in the game -->
+            <button type="submit" name="direction" value="{{ option }}">{{ option }}</button>
+            {% endfor %}
+        </form>
+        <form action="{{ url_for('main') }}" method="get">
             <button type="submit">Restart Game</button>
         </form>
-        </div>
+        <form action="{{ url_for('game', username=player_name) }}" method="post">
+            <button type="submit" name="save_game">Save Game</button>
+            <button type="submit" name="load_game">Load Game</button>
+        </form>
     </div>
+</div>
 </body>
 
 </html>

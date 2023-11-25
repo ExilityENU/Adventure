@@ -1,6 +1,6 @@
-from flask import Flask
+from flask import url_for, request, redirect, jsonify
+from model import User, db
 
-app = Flask(__name__)
 
 
 class Adventure:
@@ -9,6 +9,28 @@ class Adventure:
 		# We'll use the game_state to know where the player is and what's happening.
 		self.game_state = game_state
 		self.current_room = game_state['current_room']
+
+
+	def save_game(User):
+		# Save the current room of the player to indicate progress
+		db.session.commit()
+	def game(username):
+		player = User.query.filter_by(username=username).first()
+		if not player:
+			player = User(username=username)
+			db.session.add(player)
+			db.session.commit()
+
+		if request.method == 'POST':
+			if 'direction' in request.form:
+				direction = request.form['direction']
+				if adventure_game.move(player, direction):
+					return redirect(url_for('game', username=username))
+				else:
+					return jsonify({'error': 'Invalid direction'})
+			elif 'save_game' in request.form:
+				username.save_game()
+				return jsonify({'message': 'Game saved successfully'})
 
 	def move(self, direction):
 		# Move the player to a new room.
@@ -23,7 +45,6 @@ class Adventure:
 	def get_current_room(self):
 		# Just a way to get info about the current room.
 		return self.game_state['rooms'][self.current_room]
-
 
 # Define static GIF
 static_gif_url = 'static/star-wars-the-old-republic.gif'
@@ -368,5 +389,10 @@ game_state = {
 			'options': ['press the advantage with calculated strikes (Calculated Assault)',
 						'consolidate gains and fortify positions (Secure Advantage)']
 		},
+
+
 	}
+
 }
+game = Adventure(game_state)
+adventure_game = Adventure(game_state)
