@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
 </head>
 <body>
-    <h1>{{ room_info['text'] }}</h1>
-    <form action="{{ url_for('move') }}" method="post">
-        {% for option in room_info['options'] %}
-            <button type="submit" name="direction" value="{{ option }}">{{ option }}</button>
-        {% endfor %}
-    </form>
+    <div class="container">
+        <h1>Welcome to the Adventure Game</h1>
+        <p>Enter your name to begin:</p>
+        <form action="{{ url_for('game') }}" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
 </body>
 </html>
