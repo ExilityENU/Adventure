@@ -23,7 +23,7 @@
 
             <!-- Container for displaying images -->
             <div id="image-container">
-                <!-- Displaying a static GIF related to Star Wars -->
+                <!-- Displaying a static GIF -->
                 <img src="{{ url_for('static', filename='star-wars-the-old-republic.gif') }}" alt="Static GIF">
             </div>
 
@@ -35,6 +35,9 @@
                     <button type="submit" name="direction" value="{{ option }}">{{ option }}</button>
                 {% endfor %}
             </form>
+            <form action="{{ url_for('main') }}" method="get">
+            <button type="submit">Restart Game</button>
+        </form>
         </div>
     </div>
 </body>
