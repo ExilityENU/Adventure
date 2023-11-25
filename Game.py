@@ -321,7 +321,7 @@ game_state = {
         },
         'call for reinforcements (Strategic Reinforcement)': {
             'text': 'Recognizing the need for additional support, you call for reinforcements to bolster the Republic defense. The battle takes a strategic turn with the arrival of fresh troops. Choose your next move:',
-            'options': ['lead the reinforced charge (Counteroffensive)', 'provide support from a command position (Commander\'s Strategy)']
+            'options': ['lead the reinforced charge (Counteroffensive)', 'provide support from a command position (Commanders Strategy)']
         },
         'utilize defensive emplacements (Fortified Defense)': {
             'text': 'You strategically deploy defensive emplacements, creating a formidable barrier against the Sith advance. The Republic stronghold becomes a fortress that is challenging to breach. Choose your next move:',
