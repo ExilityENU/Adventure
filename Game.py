@@ -382,3 +382,20 @@ game = Adventure(game_state)
 adventure_game = Adventure(game_state)
 
 
+def game(username):
+	player = User.query.filter_by(username=username).first()
+	if not player:
+		player = User(username=username)
+		db.session.add(player)
+		db.session.commit()
+
+	if request.method == 'POST':
+		if 'direction' in request.form:
+			direction = request.form['direction']
+			if adventure_game.move(player, direction):
+				return redirect(url_for('game', username=username))
+			else:
+				return jsonify({'error': 'Invalid direction'})
+		elif 'save_game' in request.form:
+			save_game()
+			return jsonify({'message': 'Game saved successfully'})
