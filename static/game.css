@@ -44,3 +44,30 @@ button:hover {
 img {
     border: 2px solid #ffe300; /* Yellow border around images */
 }
+
+/* Navbar styles */
+.navbar {
+    background-color: #1c85e8; /* Blue navbar background color */
+    padding: 10px 0; /* Add some padding to the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the navbar */
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #fff; /* White text color for navbar heading */
+}
+
+.navbar form {
+    display: inline-block; /* Display the form as inline-block within the navbar */
+}
+
+/* Adjust the button styles for the navbar */
+.navbar button {
+    margin: 0 10px; /* Add some spacing between buttons */
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
+}
+
+.navbar button:hover {
+    background-color: #155d91; /* Darker blue on hover for navbar buttons */
+}

@@ -1,3 +1,5 @@
+<!-- main.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,19 +9,22 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
 </head>
 <body>
+<nav class="navbar">
     <div class="container">
-        <h1>Welcome to the Star wars the Old Republic Adventure Game</h1>
-        <!-- Container for displaying images -->
-            <div id="image-container">
-                <!-- Displaying a static GIF -->
-                <img src="{{ url_for('static', filename='jeditempl.jpg') }}" alt="Static GIF">
-            </div>
-        <p>Enter your name to begin:</p>
+        <h1>Welcome to the Star Wars: The Old Republic Adventure Game</h1>
         <form action="{{ url_for('game') }}" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <button type="submit">Start Game</button>
         </form>
     </div>
+</nav>
+<div class="container">
+    <!-- Container for displaying images -->
+    <div id="image-container">
+        <!-- Displaying a static GIF -->
+        <img src="{{ url_for('static', filename='Firefly Jedi Temple.jpg') }}" alt="Static GIF">
+    </div>
+</div>
 </body>
 </html>

@@ -47,11 +47,11 @@
 </div>
 </body>
 <script>
-saveBtn.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default link behavior
-            fetch('/index/Game/save_progress', {
-                method: 'POST',
-            })
+    saveBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        fetch('/index/Game/save_progress', {
+            method: 'POST',
+        })
             .then(response => response.json())
             .then(data => {
                 console.log('Progress saved!');
@@ -60,7 +60,7 @@ saveBtn.addEventListener('click', function (event) {
             .catch(error => {
                 console.error('Error:', error);
             });
-        });
+    });
 
 </script>
 
