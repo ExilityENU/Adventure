@@ -53,12 +53,13 @@ game_state = {
 		},
 		'knowledge': {
 			'text': 'You enter a vast chamber filled with holographic archives. A wise old Jedi Guardian appears before you. "Choose a path to enlightenment," he says. Options:',
-			'options': ['study ancient texts (Wisdom)', 'meditate on the Force (Mastery)']
+			'options': ['study ancient texts (Wisdom)', 'meditate on the Force (Mastery)'],
+			'image': 'Firefly LIB.jpg'
 		},
 		'combat': {
 			'text': 'A training ground with remote droids awaits. A battle-hardened Jedi Sentinel oversees the challenge. "Show your skill in combat," she commands. Options:',
-			'options': ['engage in a swift and aggressive attack (Agility)',
-						'focus on defense and counterattacks (Resilience)']
+			'options': ['engage in a swift and aggressive attack (Agility)','focus on defense and counterattacks (Resilience)'],
+			'image': 'Tythonian_War_Droid.jpg'
 		},
 		'explore_forest': {
 			'text': 'You decide to explore the forest surrounding the temple. The dense vegetation hides mysteries and potential dangers. Choose your next move:',
@@ -83,8 +84,8 @@ game_state = {
 		},
 		'insight': {
 			'text': 'As you progress deeper into the grove, you find yourself in a chamber shrouded in mystical energy. A holographic projection of a venerable Jedi Consular appears. "The path to true understanding requires insight," she advises. Options:',
-			'options': ['commune with the Force to glimpse the future (Foresight)',
-						'engage in philosophical contemplation to understand the present (Reflection)']
+			'options': ['commune with the Force to glimpse the future (Foresight)','engage in philosophical contemplation to understand the present (Reflection)'],
+			'image': 'Jedi holo.jpg'
 		},
 		'commune with the Force to glimpse the future (Foresight)': {
 			'text': 'You open yourself to the Force, allowing its currents to guide you through glimpses of possible futures. The visions reveal potential paths, both light and dark. Choose your next move:',
@@ -107,7 +108,8 @@ game_state = {
 			'options': ['compose a melody that resonates with the Light Side (Harmony)',
 						'explore dissonant tones to understand the nature of the Dark Side (Discord)',
 						'immerse yourself in the music to find inner peace (Serenity)',
-						'engage in a rhythmic dance to connect with the Force (Dance of the Force)']
+						'engage in a rhythmic dance to connect with the Force (Dance of the Force)'],
+			'image': 'Firefly_Jedi.jpg'
 		},
 		'compose a melody that resonates with the Light Side (Harmony)': {
 			'text': 'You focus your energy on composing a melody that reflects the harmonious essence of the Light Side. The room is filled with a soothing aura. Choose your next move:',
