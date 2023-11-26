@@ -74,7 +74,7 @@ game_state = {
 		'utilize strategic agility (Agile Strikes)': {
 			'text': 'You harness your agility strategically, striking with precision and evading enemy attacks. Your combat style becomes a dance of calculated moves. Choose your next move:',
 			'options': ['return to temple entrance', 'proceed to the next chapter'],
-			'image':
+			'image':'jedivsSith.jpg'
 		},
 		'focus on defense and counterattacks (Resilience)': {
 			'text': 'You adopt a defensive stance, patiently waiting for your opponents to strike. Your resilience allows you to counterattack with precision. Choose your next move:',
@@ -82,35 +82,35 @@ game_state = {
 			'image': 'Aura.jpg'
 		},
 		'employ resilient counterattacks (Counterstrike)': {
-			'text': 'Your defensive strategy pays off as you counterattack with resilience, turning your opponents\' moves against them. Your combat prowess is undeniable. Choose your next move:',
+			'text': 'Your defensive strategy pays off as you counterattack with resilience, turning your opponents moves against them. Your combat prowess is undeniable. Choose your next move:',
 			'options': ['return to temple entrance', 'proceed to the next chapter'],
-			'image':
+			'image':'swtor-blade.jpg'
 		},
 		'insight': {
 			'text': 'As you progress deeper into the grove, you find yourself in a chamber shrouded in mystical energy. A holographic projection of a venerable Jedi Consular appears. "The path to true understanding requires insight," she advises. Options:',
 			'options': ['commune with the Force to glimpse the future (Foresight)',
 						'engage in philosophical contemplation to understand the present (Reflection)'],
-			'image': 'Jedi holo.jpg'
+			'image': 'Satele_hologram.jpg'
 		},
 		'commune with the Force to glimpse the future (Foresight)': {
 			'text': 'You open yourself to the Force, allowing its currents to guide you through glimpses of possible futures. The visions reveal potential paths, both light and dark. Choose your next move:',
 			'options': ['apply foresight in decision-making', 'proceed to the next chapter'],
-			'image':
+			'image':'future.jpg'
 		},
 		'apply foresight in decision-making': {
 			'text': 'Armed with foresight, you navigate the challenges with a heightened sense of awareness. Your decisions become calculated and precise. Choose your next move:',
 			'options': ['return to temple entrance', 'proceed to the next chapter'],
-			'image':
+			'image':'swtor__jedi_meditation.jpg'
 		},
 		'engage in philosophical contemplation to understand the present (Reflection)': {
 			'text': 'You delve into deep contemplation, seeking a profound understanding of the present moment. Your connection to the Force deepens. Choose your next move:',
-			'options': ['apply reflection in decision-making', 'proceed to the next chapter']
-			'image':
+			'options': ['apply reflection in decision-making', 'proceed to the next chapter'],
+			'image':'meditation.jpg'
 		},
 		'apply reflection in decision-making': {
 			'text': 'With a clearer understanding of the present, your decision-making becomes grounded and wise. Your choices are influenced by a deep sense of purpose. Choose your next move:',
-			'options': ['return to temple entrance', 'proceed to the next chapter']
-			'image':
+			'options': ['return to temple entrance', 'proceed to the next chapter'],
+			'image':'Firefly_Jedi.jpg'
 		},
 		'harmony': {
 			'text': 'An ethereal room filled with calming energies presents itself. A Force-sensitive musician awaits, surrounded by harmonic resonance. "Balance is the key to harmony," she whispers. Options:',
@@ -143,17 +143,17 @@ game_state = {
 		'immerse yourself in the music to find inner peace (Serenity)': {
 			'text': 'You immerse yourself in the calming music, finding inner peace and serenity. The energies of the Force flow harmoniously through you. Choose your next move:',
 			'options': ['apply serenity in decision-making', 'proceed to the next chapter'],
-			'image':
+			'image':'Jedi study.jpg'
 		},
 		'apply serenity in decision-making': {
 			'text': 'Guided by the inner peace you found, you navigate the challenges with a serene mind. Your decisions become centered and balanced. Choose your next move:',
 			'options': ['return to temple entrance', 'proceed to the next chapter'],
-			'image':
+			'image':'light.jpg'
 		},
 		'engage in a rhythmic dance to connect with the Force (Dance of the Force)': {
 			'text': 'You engage in a rhythmic dance, synchronizing your movements with the flowing energies of the Force. The room pulses with a vibrant connection. Choose your next move:',
 			'options': ['apply dance-inspired agility in combat', 'proceed to the next chapter'],
-			'image':
+			'image':'maxresdefault.jpg'
 		},
 		'apply dance-inspired agility in combat': {
 			'text': 'Infused with the agility inspired by your rhythmic dance, you return to the training ground. The battle-hardened Jedi Sentinel observes your every move. Options:',
@@ -173,7 +173,7 @@ game_state = {
 		'employ ancient techniques (Wisdom in Combat)': {
 			'text': 'You tap into the ancient techniques passed down through generations. Your combat style becomes a dance of traditional and strategic moves. Choose your next move:',
 			'options': ['return to temple entrance', 'proceed to the next chapter'],
-			'image':
+			'image':'swtor-blade.jpg'
 		},
 		'utilize strategic wisdom (Tactician)': {
 			'text': 'You strategically apply wisdom to your combat techniques, analyzing and outsmarting your opponents. The Jedi Sentinel nods in approval. Choose your next move:',
@@ -343,7 +343,7 @@ game_state = {
 		'go to Galactic Space Station': {
 			'text': 'You decide to head to the Galactic Space Station, a hub of activity and a nexus for various paths in the galaxy. As you arrive, new opportunities and challenges present themselves. Choose your next move:',
 			'options': ['return to the start page', 'head to Hoth'],
-			'image':'Firefly Hoth.jpg'
+			'image':'spaceStation.jpg'
 		},
 		'return to the start page': {
 			'text': 'As the echoes of your dark choice reverberate through the Force, you find yourself back at the start page, standing before the ancient temple of Morai on the remote planet of Tython. A chilling wind rustles the leaves as you enter the forest, guided only by the Force. Choose a direction:',
