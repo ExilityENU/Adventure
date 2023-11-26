@@ -178,7 +178,7 @@ game_state = {
 		'utilize strategic wisdom (Tactician)': {
 			'text': 'You strategically apply wisdom to your combat techniques, analyzing and outsmarting your opponents. The Jedi Sentinel nods in approval. Choose your next move:',
 			'options': ['return to temple entrance', 'proceed to the next chapter'],
-			'image':
+			'image':'Training.jpg'
 		},
 		'meditate on the Force (Mastery)': {
 			'text': 'You choose to meditate on the Force, seeking mastery over its energies. Your connection deepens, opening new pathways to understanding. Choose your next move:',
@@ -193,12 +193,12 @@ game_state = {
 		'unleash controlled power (Masterful Strikes)': {
 			'text': 'You unleash a torrent of controlled power, overwhelming your opponents with precise and devastating strikes. Your mastery is unmatched. Choose your next move:',
 			'options': ['return to temple entrance', 'proceed to the next chapter'],
-			'image':
+			'image':'master.jpg'
 		},
 		'weave the Force into defense (Force Shield)': {
 			'text': 'You weave the Force into a formidable shield, deflecting attacks with ease. Your defensive prowess is unmatched. Choose your next move:',
 			'options': ['return to temple entrance', 'proceed to the next chapter'],
-			'image':
+			'image':'jedi-knight-guardian-defense.jpg'
 		},
 		'return to temple entrance': {
 			'text': 'You decide to return to the temple entrance, reflecting on your journey and preparing for what lies ahead. As you arrive, the path splits once more. Choose your next move:',
@@ -213,7 +213,7 @@ game_state = {
 		'wisdom': {
 			'text': 'A hidden chamber reveals itself, filled with ancient scrolls and artifacts. The echoes of wise Jedi resonate within. Choose your next move:',
 			'options': ['apply wisdom in combat', 'proceed to the next chapter'],
-			'image':
+			'image':'Firefly  Jedi Temple LIB.jpg'
 		},
 		'mastery': {
 			'text': 'You discover a secluded training area, untouched by time. The aura of mastery lingers in the air. Choose your next move:',
@@ -233,7 +233,7 @@ game_state = {
 		'embrace Darkened Whispers': {
 			'text': 'A mysterious figure in Sith robes appears, tempting you with promises of power and revenge. The Dark Side calls to you. Options:',
 			'options': ['succumb to the Dark Side (Power)', 'resist the allure (Purity)'],
-			'image': 'dark side.jpg'
+			'image': 'dark aura.jpg'
 		},
 		'rush to the frontlines (Valor)': {
 			'text': 'You heed the Republics call and rush to the frontlines. The battlefield is chaotic, and the fate of the galaxy hangs in the balance. Choose your next move:',
@@ -243,17 +243,17 @@ game_state = {
 		'delve into strategic planning (Tactician)': {
 			'text': 'You choose to focus on strategic planning and tactics to aid the Republic. Your decisions will influence the flow of the battle. Choose your next move:',
 			'options': ['lead the Vanguard Assault', 'infiltrate Behind Enemy Lines'],
-			'image':
+			'image':'stratagy.jpg'
 		},
 		'succumb to the Dark Side (Power)': {
 			'text': 'You embrace the Dark Side, seeking power at any cost. The dark energies flow through you, empowering your every move. Choose your next move:',
 			'options': ['lead the Vanguard Assault', 'infiltrate Behind Enemy Lines'],
-			'image':
+			'image':'dark aura.jpg'
 		},
 		'resist the allure (Purity)': {
 			'text': 'You resist the allure of the Dark Side, remaining true to the Light. Your inner strength bolsters your resolve. Choose your next move:',
 			'options': ['lead the Vanguard Assault', 'infiltrate Behind Enemy Lines'],
-			'image':
+			'image':'Aura.jpg'
 		},
 		'lead the Vanguard Assault': {
 			'text': 'You take charge of the Vanguard Assault, leading Republic forces against the Sith. The battle is intense, and you find yourself face to face with a formidable Sith Lord. Choose your next move:',
@@ -263,77 +263,77 @@ game_state = {
 		'strike the boss down with a barrage of blows': {
 			'text': 'You engage the Sith Lord in a fierce duel, unleashing a barrage of powerful blows. The battle is intense, but your skill and determination prevail. The Sith Lord falls defeated. Choose your next move:',
 			'options': ['go to Galactic Space Station'],
-			'image':
+			'image':'spaceStation.jpg','image':'jedivsSith.jpg'
 		},
 		'seek a diplomatic resolution': {
 			'text': 'You attempt to find a diplomatic resolution with the Sith Lord, hoping to end the conflict without further bloodshed. The Sith Lord seems open to negotiation. Choose your next move:',
 			'options': ['convince the Sith Lord to retreat', 'engage in a duel for honor'],
-			'image':
+			'image':'jks.jpg'
 		},
 		'convince the Sith Lord to retreat': {
 			'text': 'Your diplomatic efforts succeed, and the Sith Lord agrees to retreat, bringing an unexpected end to the battle. The Republic forces secure the frontlines. Choose your next move:',
 			'options': ['go to Galactic Space Station'],
-			'image':
+			'image':'spaceStation.jpg'
 		},
 		'engage in a duel for honor': {
 			'text': 'Despite your attempts at negotiation, the Sith Lord challenges you to a duel for honor. The battle is fierce, and the outcome uncertain. Choose your next move:',
 			'options': ['embrace the Dark Side to ensure victory', 'fight with honor and integrity'],
-			'image':
+			'image':'jedivsSith.jpg'
 		},
 		'embrace the Dark Side to ensure victory': {
 			'text': 'In a moment of desperation, you embrace the Dark Side to ensure victory. The power surges through you, but at a cost. Choose your next move:',
 			'options': ['wrestle control back from the Dark Side', 'embrace the Dark Side completely'],
-			'image':
+			'image':'dark aura.jpg'
 		},
 		'wrestle control back from the Dark Side': {
 			'text': 'You struggle against the influence of the Dark Side, fighting to regain control. Your inner strength prevails, and you emerge from the battle with a newfound understanding. Choose your next move:',
 			'options': ['go to Galactic Space Station'],
-			'image':
+			'image':'spaceStation.jpg'
 		},
 		'embrace the Dark Side completely': {
 			'text': 'You fully embrace the Dark Side, succumbing to its temptations. The power consumes you, and your actions become twisted by the darkness. Choose your next move:',
 			'options': ['proclaim loyalty to the Sith', 'seek redemption and return to the Light'],
-			'image':
+			'image':'ds.jpg'
 		},
 		'proclaim loyalty to the Sith': {
 			'text': 'You proclaim loyalty to the Sith, aligning yourself with the dark forces. Your destiny takes a dark turn, and the galaxy awaits the consequences of your choice. Congratulations! Your journey as a Dark Side Force user continues.',
 			'options': ['go to Galactic Space Station'],
-			'image':
+			'image':'' , 'image':'spaceStation.jpg'
 		},
 		'seek redemption and return to the Light': {
 			'text': 'In a moment of clarity, you reject the Dark Side and seek redemption. The Light welcomes you back, and you vow to use your strength for the greater good. Choose your next move:',
 			'options': ['go to Galactic Space Station'],
-			'image':
+			'image':'Aura.jpg ', 'image':'spaceStation.jpg'
 		},
 		'infiltrate Behind Enemy Lines': {
 			'text': 'You choose to infiltrate Behind Enemy Lines, seeking to disrupt the Sith war efforts. As you navigate through enemy territory, you encounter a powerful Sith assassin. Choose your next move:',
 			'options': ['engage in a stealthy confrontation', 'confront the assassin directly'],
-			'image':
+			'image':'swtor-onslaught-1_feature.jpg'
 		},
 		'engage in a stealthy confrontation': {
 			'text': 'You use stealth to confront the Sith assassin, moving silently through the shadows. A tense battle ensues, with each move calculated for maximum efficiency. Choose your next move:',
 			'options': ['utilize guerrilla tactics (Stealth Strikes)', 'proceed to the next chapter'],
-			'image':
+			'image':'jedi-consular.jpg'
 		},
 		'utilize guerrilla tactics (Stealth Strikes)': {
 			'text': 'You employ guerrilla tactics, striking from the shadows with deadly precision. The Sith assassin is caught off guard, and you emerge victorious. Choose your next move:',
 			'options': ['go to Galactic Space Station'],
-			'image':
+			'image':'trooper.jpg'
 		},
 		'confront the assassin directly': {
 			'text': 'You choose to confront the Sith assassin directly, engaging in a head-on confrontation. The battle is fierce, with lightsabers clashing in a display of raw power. Choose your next move:',
 			'options': ['overwhelm the assassin with aggressive attacks', 'defend and wait for an opening'],
-			'image':
+			'image':'stand.jpg'
 		},
 		'overwhelm the assassin with aggressive attacks': {
 			'text': 'You unleash a barrage of aggressive attacks, overwhelming the Sith assassin with sheer force. The battle is intense, but your aggression proves to be too much for the assassin. Choose your next move:',
 			'options': ['go to Galactic Space Station'],
-			'image':
+			'image':'jedivsSith.jpg'
 		},
 		'defend and wait for an opening': {
-			'text': 'You adopt a defensive stance, patiently waiting for an opening in the Sith assassin\'s attacks. Your resilience pays off as you find the perfect moment to strike. Choose your next move:',
+			'text': 'You adopt a defensive stance, patiently waiting for an opening in the Sith assassins attacks. Your resilience pays off as you find the perfect moment to strike. Choose your next move:',
 			'options': ['deliver a decisive counterattack', 'proceed to the next chapter'],
-			'image':
+			'image':'swtor-onslaught-1_feature.jpg'
 		},
 		'deliver a decisive counterattack': {
 			'text': 'Your patience pays off as you deliver a decisive counterattack, defeating the Sith assassin with precision. The path is now clear for further infiltration. Choose your next move:',
@@ -418,37 +418,37 @@ game_state = {
 			'text': 'With relentless aggression, you push the Sith forces back, carving a path through their ranks. The chilling winds carry the sounds of victory. Choose your next move:',
 			'options': ['pursue the retreating Sith for a decisive victory (Chase Down)',
 						'consolidate gains and prepare for the next assault (Preparation)'],
-			'image':
+			'image':'sithvsJedi.jpg'
 		},
 		'target key Republic positions with precision (Strategic Strikes)': {
 			'text': 'You target key Republic positions with precision, causing disruption and weakening their defenses. The Sith advance with calculated strikes. Choose your next move:',
 			'options': ['exploit weakened defenses for a breakthrough (Exploitation)',
 						'redirect forces to vulnerable Republic flanks (Diversion)'],
-			'image':
+			'image':'assault.jpg'
 		},
 		'infiltrate Republic command for intel (Sabotage)': {
 			'text': 'You infiltrate Republic command, gathering valuable intel and causing confusion among their leadership. The Sith forces benefit from the strategic advantage. Choose your next move:',
 			'options': ['exploit gathered intel for targeted strikes (Exploitation)',
 						'disrupt Republic communication lines (Communication Sabotage)'],
-			'image':
+			'image':'imp_spy.jpg'
 		},
 		'unleash a surprise flank attack (Flanking Maneuver)': {
 			'text': 'With a surprise flank attack, you catch the Republic forces off guard. The Sith advance from an unexpected direction, creating chaos among the defenders. Choose your next move:',
 			'options': ['press the advantage with swift attacks (Swift Onslaught)',
 						'consolidate gains and fortify positions (Secure Flank)'],
-			'image':
+			'image':'Great_War_Jedi_vs_Sith.jpg'
 		},
 		'overpower the Sith with sheer strength (Brute Force)': {
 			'text': 'You overpower the Sith with sheer strength, dominating the individual duel. The defeated Sith forces retreat, demoralized by your display of power. Choose your next move:',
 			'options': ['pursue the retreating Sith for a decisive victory (Pursuit)',
 						'consolidate gains and prepare for the next assault (Preparation)'],
-			'image':
+			'image':'jedivsSith.jpg'
 		},
 		'utilize finesse and technique (Precision Strikes)': {
 			'text': 'With finesse and technique, you outmaneuver the Sith in the individual duel. The Sith forces are left in disarray, opening opportunities for the Republic. Choose your next move:',
 			'options': ['press the advantage with calculated strikes (Calculated Assault)',
 						'consolidate gains and fortify positions (Secure Advantage)'],
-			'image':
+			'image':'swtor-onslaught-1_feature.jpg'
 		},
 
 	}
