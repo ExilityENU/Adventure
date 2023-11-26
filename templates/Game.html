@@ -20,13 +20,10 @@
     <div id="room-info">
         <!-- Heading for the current room's text -->
         <h2>{{ room_info['text'] }}</h2>
-
-        <!-- Container for displaying images -->
         <div id="image-container">
-            <!-- Displaying a static GIF -->
-            <img src="{{ url_for('static', filename='star-wars-the-old-republic.gif') }}" alt="Static GIF">
+            <!-- Displaying the image for the current room -->
+            <img src="{{ url_for('static', filename=room_info['image']) }}" alt="Room Image">
         </div>
-
         <!-- Form for player interaction - choosing options -->
         <form action="{{ url_for('move') }}" method="post">
             <!-- Looping through available options for the current room -->

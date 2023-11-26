@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #b66411; /* Dark background color */
+    background-color: #ff7708; /* Dark background color */
     margin: 0;
     color: #fff; /* White text color */
 }
@@ -10,7 +10,18 @@ body {
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow */
+    box-shadow: 0 0 10px rgb(255, 0, 0); /* White shadow */
+}
+
+#image-container {
+    text-align: center;
+}
+
+#image-container img {
+    max-width: 40%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 h1, h2, p {
@@ -42,7 +53,7 @@ button:hover {
 }
 
 img {
-    border: 2px solid #ffe300; /* Yellow border around images */
+    border: 2px solid rgba(255, 166, 0, 0.94); /* Yellow border around images */
 }
 
 /* Navbar styles */
@@ -71,3 +82,5 @@ img {
 .navbar button:hover {
     background-color: #155d91; /* Darker blue on hover for navbar buttons */
 }
+
+

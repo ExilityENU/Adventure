@@ -41,13 +41,15 @@ game_state = {
 	'intro': 'You find yourself in the midst of the Old Republic era, a time of galactic strife and political turmoil. The Sith Empire and the Galactic Republic are locked in a relentless conflict, and you, a young Force-sensitive individual, stand at the crossroads of destiny. As a member of an ancient order known as the Sentinels of the Eternal Flame, you possess a unique ability to influence the outcome of this eternal war.',
 	'current_room': 'temple_entrance',
 	'rooms': {
-		'temple_entrance': {
-			'text': 'You stand before the ancient temple of Morai on the remote planet of Tython. A chilling wind rustles the leaves as you enter the forest, guided only by the Force. Choose a direction:',
-			'options': ['enter_temple', 'explore_forest']
+		 'temple_entrance': {
+            'text': 'You stand before the ancient temple of Morai on the remote planet of Tython. A chilling wind rustles the leaves as you enter the forest, guided only by the Force. Choose a direction:',
+            'options': ['enter_temple', 'explore_forest'],
+            'image': 'jeditemple.jpg'
 		},
 		'enter_temple': {
 			'text': 'The grand entrance looms ahead. Massive stone doors engraved with the symbols of the Force beckon you. As you approach, you sense a disturbance in the Force. Your journey begins. Choose your next move:',
 			'options': ['knowledge', 'combat'],
+			'image': 'jeditemple.jpg'
 		},
 		'knowledge': {
 			'text': 'You enter a vast chamber filled with holographic archives. A wise old Jedi Guardian appears before you. "Choose a path to enlightenment," he says. Options:',
@@ -60,7 +62,8 @@ game_state = {
 		},
 		'explore_forest': {
 			'text': 'You decide to explore the forest surrounding the temple. The dense vegetation hides mysteries and potential dangers. Choose your next move:',
-			'options': ['insight', 'harmony']
+			'options': ['insight', 'harmony'],
+			'image': 'Firefly_forest.jpg'
 		},
 		'engage in a swift and aggressive attack (Agility)': {
 			'text': 'You unleash a flurry of swift and aggressive attacks, overpowering your opponents with speed and precision. Your agility in combat is unmatched. Choose your next move:',
