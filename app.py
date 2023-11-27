@@ -61,5 +61,17 @@ def game():
 	room_info = adventure_game.get_current_room()
 	return render_template('Game.html', player_name=player_name, room_info=room_info)
 
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+	if request.method == 'POST':
+		# Check if 'direction' is in the form data
+		if 'direction' in request.form:
+			direction = request.form['direction']
+			if adventure_game.move(direction):
+				return redirect(url_for('register'))
+			else:
+				return jsonify({'error': 'Invalid direction'})
+	return render_template('register.html')
+
 if __name__ == '__main__':
 	app.run(host="0.0.0.0", port="8080", debug=True)
