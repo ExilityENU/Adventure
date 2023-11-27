@@ -44,6 +44,23 @@
 </div>
 </body>
 <script>
+     import {initializeApp} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import {getAuth} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyDT2k-zy6sT7alm_qEtn1LzlDJiGYYfd4Y",
+        authDomain: "adventure-c509f.firebaseapp.com",
+        projectId: "adventure-c509f",
+        storageBucket: "adventure-c509f.appspot.com",
+        messagingSenderId: "1030015793989",
+        appId: "1:1030015793989:web:835ab76c441de0bab01c2c",
+        measurementId: "G-88E0FCDKRD"
+    };
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+</script>
+<script>
     saveBtn.addEventListener('click', function (event) {
         event.preventDefault(); // Prevent default link behavior
         fetch('/index/Game/save_progress', {

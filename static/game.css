@@ -61,6 +61,8 @@ img {
     background-color: #1c85e8; /* Blue navbar background color */
     padding: 10px 0; /* Add some padding to the navbar */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the navbar */
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar h1 {
