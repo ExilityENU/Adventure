@@ -1,34 +1,33 @@
-<!-- main.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Game</title>
+    <title>Register New User</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
 </head>
 <body>
-<nav class="navbar">
-    <div class="container">
-        <h1>Welcome to the Star Wars: The Old Republic Adventure Game</h1>
-        <form action="{{ url_for('game') }}" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <button type="submit">Start Game</button>
-        </form>
+<form action="{{ url_for('register') }}" method="post" class="w-25 m-4">
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
     </div>
-</nav>
-<div class="container">
-    <!-- Container for displaying images -->
-    <div id="image-container">
-        <!-- Displaying a static GIF -->
-        <img src="{{ url_for('static', filename='Firefly Jedi Temple.jpg') }}" alt="Static GIF">
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+        <label for="floatingPassword">Password</label>
     </div>
-</div>
-</body>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="fnameInput" placeholder="name@example.com">
+        <label for="floatingInput">First Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="lnameInput" placeholder="Password">
+        <label for="floatingPassword">Last Name</label>
+        <button type="submit" class="btn btn-primary" style="float: right;">Register</button>
+        <a href="login.html"> <button type="submit" style="float: right;" class="btn btn-primary me-2">Login</button></a>
+    </div>
+</form>
 <script type="module">
     // Import the functions you need from the SDKs you need
     import {initializeApp} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
@@ -38,6 +37,7 @@
         createUserWithEmailAndPassword,
         signOut
     } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+    import {getDatabase, set, ref} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
     // Your web app's Firebase configuration
     const firebaseConfig = {
         apiKey: "AIzaSyDT2k-zy6sT7alm_qEtn1LzlDJiGYYfd4Y",
@@ -80,7 +80,6 @@
         // An error happened.
     });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>

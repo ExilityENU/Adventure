@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, jsonify, request, session
+from flask import Flask, render_template, session
 
 import Game
 from Game import *
@@ -24,6 +24,7 @@ def move():
 		return redirect(url_for('index'))
 	else:
 		return jsonify({'error': 'Invalid direction'})
+
 
 @app.route('/save_game/<username>', methods=['POST'])
 def save_game_route(username):
@@ -59,7 +60,6 @@ def game():
 	player_name = "Jedi Padawan"  # Replace with the actual player name or retrieve it from previous forms
 	room_info = adventure_game.get_current_room()
 	return render_template('Game.html', player_name=player_name, room_info=room_info)
-
 
 if __name__ == '__main__':
 	app.run(host="0.0.0.0", port="8080", debug=True)
