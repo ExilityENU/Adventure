@@ -73,5 +73,17 @@ def register():
 				return jsonify({'error': 'Invalid direction'})
 	return render_template('register.html')
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+	if request.method == 'POST':
+		# Check if 'direction' is in the form data
+		if 'direction' in request.form:
+			direction = request.form['direction']
+			if adventure_game.move(direction):
+				return redirect(url_for('main'))
+			else:
+				return jsonify({'error': 'Invalid direction'})
+	return render_template('login.html')
+
 if __name__ == '__main__':
 	app.run(host="0.0.0.0", port="8080", debug=True)
