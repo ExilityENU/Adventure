@@ -1,7 +1,5 @@
 from flask import url_for, request, redirect, jsonify
 
-from model import User, db
-
 
 class Adventure:
 	def __init__(self, game_state):
@@ -10,9 +8,6 @@ class Adventure:
 		self.game_state = game_state
 		self.current_room = game_state['current_room']
 
-	def save_game(User):
-		# Save the current room of the player to indicate progress
-		db.session.commit()
 
 	def move(self, direction):
 		# Move the player to a new room.
@@ -459,12 +454,6 @@ adventure_game = Adventure(game_state)
 
 
 def game(username):
-	player = User.query.filter_by(username=username).first()
-	if not player:
-		player = User(username=username)
-		db.session.add(player)
-		db.session.commit()
-
 	if request.method == 'POST':
 		if 'direction' in request.form:
 			direction = request.form['direction']
