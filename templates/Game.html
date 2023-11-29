@@ -35,11 +35,6 @@
         <form action="{{ url_for('main') }}" method="get">
             <button type="submit">Restart Game</button>
         </form>
-        <form action="{{ url_for('game', username=player_name) }}" method="post">
-            <button type="submit" name="save_game">Save Game</button>
-            <button type="submit" name="load_game">Load Game</button>
-        </form>
-
     </div>
 </div>
 </body>
