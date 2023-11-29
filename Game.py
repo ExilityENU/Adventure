@@ -402,8 +402,7 @@ game_state = {
 		},
 		'utilize finesse and technique (Precision Strikes)': {
 			'text': 'With finesse and technique, you outmaneuver the Sith in the individual duel. The Sith forces are left in disarray, opening opportunities for the Republic. Choose your next move:',
-			'options': ['press the advantage with calculated strikes (Calculated Assault)',
-						'consolidate gains and fortify positions (Secure Advantage)'],
+			'options': ['consolidate gains and fortify positions (Secure Advantage)'],
 			'image': 'swtor-onslaught-1_feature.jpg'
 		},
 		'pursue the retreating Sith for a decisive victory (Pursuit)': {
