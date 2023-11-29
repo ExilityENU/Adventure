@@ -4,13 +4,15 @@ from Game import *
 
 app = Flask(__name__)
 
-
+# Route for displaying the main game page
 @app.route('/Game')
 def index():
 	room_info = adventure_game.get_current_room()
+	# passing the room information to the template
 	return render_template('Game.html', room_info=room_info)
 
 
+# Route for handling movement within the game
 @app.route('/move', methods=['POST'])
 def move():
 	direction = request.form['direction']
@@ -41,7 +43,7 @@ def game():
 				return redirect(url_for('game'))
 			else:
 				return jsonify({'error': 'Invalid direction'})
-	player_name = "Jedi Padawan"  # Replace with the actual player name or retrieve it from previous forms
+	player_name = "Jedi Padawan"
 	room_info = adventure_game.get_current_room()
 	return render_template('Game.html', player_name=player_name, room_info=room_info)
 
