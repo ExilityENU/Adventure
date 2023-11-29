@@ -1,10 +1,9 @@
 from flask import Flask, render_template, session
 
-import Game
 from Game import *
 
-
 app = Flask(__name__)
+
 
 @app.route('/Game')
 def index():
@@ -19,6 +18,7 @@ def move():
 		return redirect(url_for('index'))
 	else:
 		return jsonify({'error': 'Invalid direction'})
+
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
@@ -45,6 +45,7 @@ def game():
 	room_info = adventure_game.get_current_room()
 	return render_template('Game.html', player_name=player_name, room_info=room_info)
 
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
 	if request.method == 'POST':
@@ -57,6 +58,7 @@ def register():
 				return jsonify({'error': 'Invalid direction'})
 	return render_template('register.html')
 
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
 	if request.method == 'POST':
@@ -68,6 +70,7 @@ def login():
 			else:
 				return jsonify({'error': 'Invalid direction'})
 	return render_template('login.html')
+
 
 if __name__ == '__main__':
 	app.run(host="0.0.0.0", port="8080", debug=True)
