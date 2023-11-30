@@ -411,7 +411,7 @@ game_state = {
 						'coordinate with Republic forces for a strategic encirclement (Encirclement)'],
 			'image': 'swtor-onslaught-1_feature.jpg'
 		},
-		'swift and aggressive assault (Swift Assault)': {
+		'launch a swift and aggressive assault (Swift Assault)': {
 			'text': 'You launch a swift and aggressive assault, catching the retreating Sith forces off guard. The battlefield becomes chaotic as your lightsaber cuts through enemy ranks. Choose your next move:',
 			'options': ['regroup with Republic forces to assess the situation (Regroup)'],
 			'image': 'trooper.jpg'
