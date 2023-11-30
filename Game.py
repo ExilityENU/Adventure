@@ -385,8 +385,7 @@ game_state = {
 		},
 		'utilize defensive emplacements (Fortified Defense)': {
 			'text': 'You strategically deploy defensive emplacements, creating a formidable barrier against the Sith advance. The Republic stronghold becomes a fortress that is challenging to breach. Choose your next move:',
-			'options': ['launch a counterattack from fortified positions (Counter Assault)',
-						'maintain a defensive stance (Hold the Line)'],
+			'options': ['execute a counteroffensive strategy (Counterstrike)'],
 			'image': 'SWTOR_War.jpg'
 		},
 		'execute a counteroffensive strategy (Counterstrike)': {
