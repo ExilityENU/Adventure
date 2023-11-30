@@ -449,8 +449,7 @@ game_state = {
 		},
 		'coordinate with allied Jedi for a synchronized assault (Jedi Alliance)': {
 			'text': 'You coordinate with allied Jedi, forming a powerful alliance to synchronize your assault on the Sith. The combined strength of the Jedi forces creates a formidable front. Choose your next move:',
-			'options': ['launch a decisive assault on Sith strongholds (Decisive Assault)',
-						'maintain a defensive stance to repel Sith counterattacks (Defensive Stance)'],
+			'options': ['launch a decisive assault on Sith strongholds (Decisive Assault)'],
 			'image': 'alliance.jpg'
 		},
 		'launch a decisive assault on Sith strongholds (Decisive Assault)': {
